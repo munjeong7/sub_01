@@ -1,0 +1,392 @@
+@charset "utf-8";
+html{scroll-behavior: smooth;
+	overflow-y: scroll;}/*탭메뉴 스무스컨트롤*/
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: black;
+}
+
+/* 탑 */
+#top{
+    width: 1320px;
+    height: 38px;
+    margin: auto;
+}
+#top .link{
+    float: right;
+}
+#top .link li{
+    float: left;
+}
+#top .link a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+#top .link a:hover{
+    color: #1f512c;
+    font-weight: 700;
+}
+/* 탑아이콘 호버 시 아이콘 이미지 변경 */
+.link .link1 img:last-child{display:none;}
+.link .link1:hover img:first-child{display:none;}
+.link .link1:hover img:last-child{display:inline-block;}
+
+.link .link2 img:last-child{display:none;}
+.link .link2:hover img:first-child{display:none;}
+.link .link2:hover img:last-child{display:inline-block;}
+
+.link .link3 img:last-child{display:none;}
+.link .link3:hover img:first-child{display:none;}
+.link .link3:hover img:last-child{display:inline-block;}
+
+/* 헤더 */
+#header{
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+.hlogo{
+    float: left;
+    display: block;
+}
+.nav{
+    float: right;
+}
+.nav li{
+    float: left;
+    width: 180px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav li a{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 10px 0;
+}
+.margin{
+    margin-right: 280px;
+}
+.nav li a:hover{
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f512c;
+}
+
+/* 메인배너 */
+#iceland{
+    width: 100%;
+    height: 800px;
+    background: url(images/brandbanner.jpg) no-repeat center top;
+    text-align: center;
+    padding: 150px 0;
+    box-sizing: border-box;
+}
+.iceland_inner{
+    width: 881px;
+    height: 512px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+.iceland_inner h1{
+    font-family: 'Josefin Sans';
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 13px;
+    margin-bottom: 20px;
+}
+.iceland_inner img{
+    margin-bottom: 20px;
+}
+.iceland_inner h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 120px;
+}
+.iceland_inner a{
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 10px 10px;
+/*  탭버튼 호버 시 변환 속성 */
+    transition-property:all; /*속성값*/
+	transition-duration:0.3s; /*효과완료하는 시간*/
+	transition-timing-function:ease-in-out;/*효과의 속도곡선*/
+	transition-delay:0; /*효과의 지연되는 시간*/
+}
+.iceland_inner a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.mar3{
+    margin-right: 20px;
+}
+
+/* 브랜드스토리 */
+.sub1_title h1{
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: 500;
+    margin: 100px 0;
+}
+.icelandmoss{
+    width: 681px;
+    height: 678px;
+    float: left;
+    margin-left: 200px;
+}
+.icelandmoss img{
+    display: block;
+}
+.mosstext{
+    float: right;
+    width: 719px;
+    height: 678px;
+    margin-right: 250px;
+}
+.mt1{
+    float: left;
+    background: url(images/storybg1.png) no-repeat left center;
+    width: 719px;
+    height: 156px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.mt2{
+    float: right;
+    background: url(images/storybg2.png) no-repeat right center;
+    width: 719px;
+    height: 156px;
+    text-align: right;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.mt3{
+    float: left;
+    background: url(images/storybg3.png) no-repeat left center;
+    width: 719px;
+    height: 230px;
+    padding: 62px 25px 0;
+    box-sizing: border-box;
+}
+.mt1 p, .mt2 p, .mt3 p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.mar4{
+    margin: 50px 0;
+}
+
+#brandlogo{
+    clear: both;
+    width: 1320px;
+    height: 834px;
+    margin: 0 auto;
+    padding: 150px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.logotext1{
+    float: left;
+    width: 283px;
+    height: 202px;
+    background-color: #f3f3f3;
+    padding: 18px 0;
+    box-sizing: border-box;
+    margin: 120px 60px 0 110px;
+}
+.logotext1 p, .logotext2 p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.blue{
+    color: #5fbdc0;
+}
+.logoimg{
+    float: left;
+    width: 443px;
+    height: 416px;
+    margin-bottom: 50px;
+}
+.logoimg img{
+    display: block;
+}
+.logotext2{
+    float: left;
+    width: 234px;
+    height: 166px;
+    background-color: #f3f3f3;
+    padding: 18px 0;
+    box-sizing: border-box;
+    margin: 150px 50px 0 70px;
+}
+.green{
+    color: #76b299;
+}
+.logotext3{
+    clear: both;
+    text-align: center;
+}
+.logotext3 h5{
+    font-size: 24px;
+}
+.logotext3 p{
+    font-size: 20px;
+}
+
+/* 지구배너 */
+#forearth{
+    clear: both;
+    width: 100px;
+    height: 800px;
+    position: relative;
+}
+#forearth img{
+    display: block;
+}
+.earth{
+    position: absolute;
+    left: 190px;
+    top: 6%;
+}
+
+/* 인증마크전체박스 */
+#earthlike{
+    width: 100%;
+    height: 472px;
+    padding: 100px 0;
+}
+#earthlike h3{
+    font-size: 24px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.inner{
+    width: 1320px;
+    height: 339px;
+    margin: 0 auto;
+}
+.inner li{
+    width: 281px;
+    height: 339px;
+    float: left;
+    background: url(images/markbg.png) no-repeat center top;
+    margin: 0 20px;
+    text-align: center;
+}
+.inner img{
+    margin: 50px 0 40px;
+}
+.inner .mark3{
+    margin: 60px 0 39px;
+}
+.inner .mark4{
+    margin: 48px 0 38px;
+}
+.inner p{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 400px;
+    background: #1f512c url(images/Fline.png) no-repeat center top; 
+    padding: 80px 160px 0 160px;
+    box-sizing: border-box;
+}
+.left{
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 420px;
+}
+.flogo{
+    float: left;
+    text-align: center;
+    margin-right: 300px
+}
+.flogo p a{
+    font-size: 18px;
+    color: #fff;
+}
+.flogo p a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.right{
+    float: right;
+    text-align: right;
+}
+.right h5{
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.right p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+}
+.copy{
+    float: left;
+    margin-right: 359px;
+}
+.copy p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 153px;
+}
+.sns{
+    float: left;
+    margin-top: 110px;
+}
+.sns li{
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+}
+.sns img{
+    display: inline-block;
+}
+.sns img:hover{
+    width: 60px;
+    height: 60px;
+}
+
+/* 탑버튼 */
+#topbutton{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+/* 탑버튼 호버 시 아이콘 이미지 변경 */
+#topbutton img:last-child{display:none;}
+#topbutton:hover img:first-child{display:none;}
+#topbutton:hover img:last-child{display:inline-block;}
